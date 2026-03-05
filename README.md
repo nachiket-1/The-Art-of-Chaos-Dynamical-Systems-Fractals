@@ -3,7 +3,27 @@
 <br>
 
 <!--  MAIN BANNER  -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:080b14,30:0f1729,60:1a0a2e,100:4c1d95&height=220&section=header&text=The%20Art%20of%20Chaos&fontSize=68&fontColor=a78bfa&fontAlignY=40&desc=A%20Visual%20Journey%20Through%20Dynamical%20Systems%20%26%20Fractals&descAlignY=62&descColor=5a7a9a&descSize=17&animation=fadeIn"/>
+<svg width="100%" viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#080b14"/>
+      <stop offset="30%"  stop-color="#0f1729"/>
+      <stop offset="60%"  stop-color="#1a0a2e"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#7eb8f7"/>
+      <stop offset="50%"  stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#67e8c0"/>
+    </linearGradient>
+    <path id="wave" d="M0,160 C150,200 300,120 450,160 C600,200 750,120 900,160 L900,220 L0,220 Z"/>
+  </defs>
+  <rect width="900" height="220" fill="url(#bg)" rx="12"/>
+  <use href="#wave" fill="#0f1729" opacity="0.5"/>
+  <use href="#wave" fill="#1a0a2e" opacity="0.3" transform="translate(0,15)"/>
+  <text x="450" y="95" text-anchor="middle" font-family="'Segoe UI',system-ui,sans-serif" font-size="58" font-weight="900" letter-spacing="-1" fill="url(#title)">The Art of Chaos</text>
+  <text x="450" y="135" text-anchor="middle" font-family="'Courier New',monospace" font-size="14" letter-spacing="2" fill="#5a7a9a">A VISUAL JOURNEY THROUGH DYNAMICAL SYSTEMS &amp; FRACTALS</text>
+</svg>
 
 <br>
 
@@ -310,7 +330,19 @@ Feigenbaum's constant is universal. The road to chaos has a structure as precise
 
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:4c1d95,50:1a0a2e,100:080b14&height=140&section=footer&text=Built%20with%20Python%20%C2%B7%20NumPy%20%C2%B7%20SciPy%20%C2%B7%20Matplotlib%20%C2%B7%20Love%20for%20Mathematics&fontSize=13&fontColor=2a4060&fontAlignY=60&animation=fadeIn"/>
+<svg width="100%" viewBox="0 0 900 140" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="footerbg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#4c1d95"/>
+      <stop offset="50%"  stop-color="#1a0a2e"/>
+      <stop offset="100%" stop-color="#080b14"/>
+    </linearGradient>
+    <path id="footerwave" d="M0,0 C150,40 300,0 450,30 C600,60 750,20 900,0 L900,0 L0,0 Z"/>
+  </defs>
+  <rect width="900" height="140" fill="url(#footerbg)" rx="12"/>
+  <use href="#footerwave" fill="#0f1729" opacity="0.4"/>
+  <text x="450" y="85" text-anchor="middle" font-family="'Courier New',monospace" font-size="13" fill="#2a4060" letter-spacing="1">Built with Python · NumPy · SciPy · Matplotlib · Love for Mathematics</text>
+</svg>
 
 <br>
 
