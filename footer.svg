@@ -1,0 +1,36 @@
+<svg width="900" height="120" viewBox="0 0 900 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="footerbg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#4c1d95"/>
+      <stop offset="50%"  stop-color="#1a0a2e"/>
+      <stop offset="100%" stop-color="#080b14"/>
+    </linearGradient>
+    <linearGradient id="ftg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#7eb8f7"/>
+      <stop offset="50%"  stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#67e8c0"/>
+    </linearGradient>
+    <clipPath id="frounded">
+      <rect width="900" height="120" rx="14" ry="14"/>
+    </clipPath>
+  </defs>
+
+  <rect width="900" height="120" fill="url(#footerbg)" rx="14" ry="14"/>
+
+  <!-- Top wave shapes -->
+  <path d="M0,0 C120,30 240,5 360,20 C480,35 600,8 720,22 C810,32 870,12 900,18 L900,0 L0,0 Z"
+        fill="#1a0a2e" opacity="0.5" clip-path="url(#frounded)"/>
+  <path d="M0,0 C80,18 200,2 340,14 C480,26 620,4 780,16 C840,20 880,8 900,12 L900,0 L0,0 Z"
+        fill="#4c1d95" opacity="0.25" clip-path="url(#frounded)"/>
+
+  <!-- Thin accent line -->
+  <line x1="200" y1="72" x2="700" y2="72" stroke="url(#ftg)" stroke-width="0.8" opacity="0.25"/>
+
+  <!-- Footer text -->
+  <text x="450" y="68"
+        text-anchor="middle"
+        font-family="'Courier New', Courier, monospace"
+        font-size="12.5"
+        letter-spacing="2"
+        fill="#3a5570">Built with Python · NumPy · SciPy · Matplotlib · Love for Mathematics</text>
+</svg>
