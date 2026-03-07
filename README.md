@@ -247,7 +247,7 @@ The **return map** (xₙ → xₙ₊₁) reveals something stunning — even ins
 
 ```bash
 # Clone
-git clone https://github.com/YOUR_USERNAME/chaos-theory-notebook.git
+git clone https://github.com/nachiket-1/chaos-theory-notebook.git
 cd chaos-theory-notebook
 
 # Install dependencies
