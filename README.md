@@ -3,7 +3,11 @@
 <br>
 
 <!--  MAIN BANNER  -->
-<img width="100%" src="banner.png" alt="The Art of Chaos"/>
+<div style="background: linear-gradient(135deg, #0d1f35 0%, #0a0e1a 50%, #1a0d35 100%); border: 1px solid #1f2937; border-radius: 14px; padding: 56px 28px; margin: 8px 0;">
+  <p style="font-family: monospace; font-size: 0.8em; letter-spacing: 5px; color: #4a5a7a; margin: 0 0 14px 0;">DYNAMICAL SYSTEMS &middot; FRACTALS &middot; PURE MATHEMATICS</p>
+  <h1 style="font-size: 3em; margin: 0; background: linear-gradient(90deg, #7eb8f7, #a78bfa, #67e8c0, #f7c873, #f472b6); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; line-height: 1.2;">The Art of Chaos</h1>
+  <p style="font-family: monospace; font-size: 0.95em; color: #7eb8f7; margin: 14px 0 0 0;">&infin; z<sub>n+1</sub> = z<sub>n</sub>&sup2; + c &infin;</p>
+</div>
 
 <br>
 
@@ -99,7 +103,7 @@ The Lorenz system is just the beginning. A **zoo of strange attractors** exists 
 | **Halvorsen** | — | Three-fold symmetry, wild spirals |
 | **Aizawa** | — | Toroidal structure, alien geometry |
 | **Dadras** | — | Complex folding behavior |
-| **Thomas** | — | Labyrinthine cubic symmetry |
+| **Thomas** | René Thomas | Labyrinthine — cubic symmetry |
 
 > 📐 **FRACTAL DIMENSION** — The Lorenz attractor lives in **2.06 dimensions.**
 > More than a surface. Less than a volume. This is where chaos lives.
@@ -172,8 +176,10 @@ The Mandelbrot set is a **catalogue** of Julia sets. For every point `c`, a diff
 | `−0.4 + 0.6i` | Douady rabbit |
 | `0.285 + 0.013i` | Near-circular islands |
 | `−0.835 − 0.2321i` | San Marco fractal |
+| `−0.8 + 0.156i` | Connected swirl |
 | `−0.7 + 0.27015i` | Siegel disk |
 | `0.0 + 0.8i` | Lightning bolt |
+| `−0.123 + 0.745i` | Siegel-like ring |
 
 > If `c` is **inside** the Mandelbrot set → Julia set is one connected piece.
 > If `c` is **outside** → Julia set shatters into infinite disconnected dust.
@@ -247,14 +253,14 @@ The **return map** (xₙ → xₙ₊₁) reveals something stunning — even ins
 
 ```bash
 # Clone
-git clone https://github.com/nachiket-1/chaos-theory-notebook.git
-cd chaos-theory-notebook
+git clone https://github.com/nachiket-1/The-Art-of-Chaos-Dynamical-Systems-Fractals.git
+cd The-Art-of-Chaos-Dynamical-Systems-Fractals
 
 # Install dependencies
 pip install numpy matplotlib scipy jupyter
 
 # Launch
-jupyter notebook chaos_theory.ipynb
+jupyter notebook the-art-of-chaos-dynamical-systems-fractals.ipynb
 ```
 
 **Or open instantly — no install needed:**
@@ -274,6 +280,7 @@ jupyter notebook chaos_theory.ipynb
 | Lyapunov grid resolution | **900 × 900 = 810,000 points** |
 | Poincaré crossings recorded | **5,000+** |
 | Animation frames | **200** |
+| Lines of Python | **~400** |
 | Images downloaded from the internet | **0** |
 
 *Every single pixel generated from pure mathematics.*
