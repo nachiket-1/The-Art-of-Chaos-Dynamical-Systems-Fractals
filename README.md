@@ -12,22 +12,22 @@
 
 </div>
 
-Chaos theory studies systems that follow fixed rules but are still impossible to predict in practice. A tiny change in the starting conditions grows until it changes the outcome completely. This notebook works through the standard examples: strange attractors, the transition from order to chaos, the Mandelbrot and Julia sets, Lyapunov exponents, and Poincaré sections.
+Chaos theory studies systems that follow fixed rules but are still impossible to predict in practice. A tiny change in the starting conditions grows until it changes the outcome completely. The material is split across two notebooks so each one renders quickly on GitHub: [Part 1](the-art-of-chaos-part1.ipynb) covers sections 1 to 4, and [Part 2](the-art-of-chaos-part2.ipynb) covers sections 5 to 8.
 
 Everything is computed from the equations. No images are downloaded or reused.
 
 ## Contents
 
-| Section | Topic |
-|:---|:---|
-| 1. The Butterfly Effect | The Lorenz attractor from 80,000 points |
-| 2. Strange Attractor Gallery | Six systems with very different geometry |
-| 3. The Road to Chaos | Bifurcation diagram and Feigenbaum's constant |
-| 4. The Mandelbrot Set | One rule, detail at every scale |
-| 5. Julia Set Gallery | Eight constants, eight fractals |
-| 6. Lyapunov Exponents | Measuring how fast nearby paths separate |
-| 7. Animated Lorenz Attractor | A 200 frame rotating view |
-| 8. Poincaré Sections | Slicing an orbit to reveal its structure |
+| Part | Section | Topic |
+|:---:|:---|:---|
+| 1 | 1. The Butterfly Effect | The Lorenz attractor from 80,000 points |
+| 1 | 2. Strange Attractor Gallery | Six systems with very different geometry |
+| 1 | 3. The Road to Chaos | Bifurcation diagram and Feigenbaum's constant |
+| 1 | 4. The Mandelbrot Set | One rule, detail at every scale |
+| 2 | 5. Julia Set Gallery | Eight constants, eight fractals |
+| 2 | 6. Lyapunov Exponents | Measuring how fast nearby paths separate |
+| 2 | 7. Animated Lorenz Attractor | A 200 frame rotating view |
+| 2 | 8. Poincaré Sections | Slicing an orbit to reveal its structure |
 
 ---
 
@@ -143,7 +143,11 @@ The notebook maps lambda over a 900 by 900 grid of parameter pairs for the Zirco
 
 The animation follows the same Lorenz solution over 200 frames. A gold marker shows the current position, a blue trail shows where it has been, and the camera rotates slowly around the attractor.
 
-The cell writes a GIF to disk and displays it in the next cell. Rendering takes roughly 30 to 60 seconds, which is expected. If the animation does not appear when you run all cells, run that cell on its own.
+GitHub does not run the JavaScript inside notebook outputs, so the animation is stored in the repository as a GIF and embedded here. It plays directly on this page.
+
+![Animated Lorenz attractor](animations/lorenz_attractor.gif)
+
+The cell in Part 2 regenerates the file at `animations/lorenz_attractor.gif`. Rendering takes roughly 30 to 60 seconds, which is expected. If the animation does not appear when you run all cells, run that cell on its own.
 
 ---
 
@@ -171,8 +175,11 @@ cd The-Art-of-Chaos-Dynamical-Systems-Fractals
 # install the dependencies
 pip install numpy matplotlib scipy jupyter
 
-# run the notebook
-jupyter notebook the-art-of-chaos-dynamical-systems-fractals.ipynb
+# run part one
+jupyter notebook the-art-of-chaos-part1.ipynb
+
+# and part two
+jupyter notebook the-art-of-chaos-part2.ipynb
 ```
 
 ---
